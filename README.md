@@ -7,3 +7,6 @@ The idea is to create a new textbook, unlike other textbooks in a number of resp
 Or, well, this are some first ideas. Anybody who wants to join, just edit the 'contributors.md' file and add yourself :-)
 
 We discuss the project (e.g. to see whether it's feasible :-)) on Gitter: [![Gitter](https://badges.gitter.im/ctpsy/Lobby.svg)](https://gitter.im/ctpsy/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+
+[![Join the chat at https://gitter.im/ctpsy/Lobby](https://badges.gitter.im/ctpsy/Lobby.svg)](https://gitter.im/ctpsy/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+Critical Textbook of Psychology

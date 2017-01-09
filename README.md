@@ -14,4 +14,5 @@ For introductions: [![Gitter](https://img.shields.io/badge/gitter-Introductions-
 
 For discussing the workflow: [![Gitter](https://img.shields.io/badge/gitter-Workflow-1dce73.svg)](https://gitter.im/ctpsy/Workflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 
+For discussing how to curate the content: [![Gitter](https://img.shields.io/badge/gitter-Curation-1dce73.svg)](https://gitter.im/ctpsy/Curation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
 

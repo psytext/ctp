@@ -6,6 +6,12 @@ The idea is to create a new textbook, unlike other textbooks in a number of resp
 
 Or, well, this are some first ideas. Anybody who wants to join, just edit the 'contributors.md' file and add yourself :-)
 
-We discuss the project (e.g. to see whether it's feasible :-)) on Gitter:
+We discuss the project (e.g. to see whether it's feasible :-)) on Gitter. We currently have the following rooms.
 
-[![Gitter](https://badges.gitter.im/ctpsy/Lobby.svg)](https://gitter.im/ctpsy/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+For general chitchat: [![Gitter](https://img.shields.io/badge/gitter-Lobby-49B393.svg)](https://gitter.im/ctpsy/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+
+For introductions: [![Gitter](https://img.shields.io/badge/gitter-Introductions-49B393.svg)](https://gitter.im/ctpsy/Introductions?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+
+For discussing the workflow: [![Gitter](https://img.shields.io/badge/gitter-Workflow-49B393.svg)](https://gitter.im/ctpsy/Workflow?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge)
+
+

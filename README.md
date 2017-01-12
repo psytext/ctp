@@ -12,7 +12,7 @@ Or, well, this are some first ideas. Anything's up for discussions!
 
 ## Would you like to join?
 
-1. Just [click here to edit the 'contributors.md' file](https://github.com/Matherion/ctp/edit/master/contributors.md) and add yourself!
+1. Just [click here to edit the 'contributors.md' file](https://github.com/psytext/ctp/edit/master/contributors.md) and add yourself!
 2. Introduce yourself in [the Introductions room](https://gitter.im/ctpsy/Introductions) at Gitter
 3. While you're there, join one or more other rooms and join the discussion
 

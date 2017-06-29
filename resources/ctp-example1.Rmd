@@ -1,0 +1,67 @@
+---
+title: "Template for Critical Textbook of Psychology (ctp) resources"
+author: "Gjalt-Jorn Peters"
+date: "2017-07-01"
+output: html_document
+params:
+  id: "template"                     ### A unique identifier for this resource
+  keywords: ["one", "two", "three"]  ### Keywords capturing the resource's subject
+  parents: ["root"]                  ### Identifiers of preceding resources ("root" means none)
+  type: "standalone"                 ### One of "standalone" or "supplemental"
+  source: ""                         ### For supplemental resources, a reference to
+                                     ### the source to which this resource is supplemental
+  status: "meta"                     ### One of "meta", "draft" or "final"
+  version: "1.0"                     ### A number indicating the version
+  language: "en"                     ### The language code (following ISO 639-1)
+---
+
+# Heading (level 1)
+
+Paragraphs of text are just paragraphs of text.
+
+Use two line breaks to start a new paragraph.
+
+## Heading (level 2)
+
+Headings start with one or more hashes (#). The number of hashes indicates the level of the heading; four hashes signifies a level 4 heading (i.e. a subheading of level 3 headings).
+
+## Emphasis
+
+Text can be *emphasised* using asterisks; text contained in single asterisks is emphasized, while text contained in double asterisks is **strongly emphasized**. The former are usually rendered in italics, while the latter are rendered in bold.
+
+## Lists
+
+- Items can be placed
+- in a bulleted list using
+- dashes.
+
+1. Numbered lists can be
+2. created using numbers.
+
+Note that although the Markdown standard also allows asterisks for making bulleted lists, it's better to avoid those, so that asterisks remain reserved for emphasis. That makes it easy to identify all emphasized terms, which can be useful if we want to automatically generate, for example, an index.
+
+## Figures and links
+
+All included figures must have a Creative Commons license. Start the name of every figure with the identifier of the resource followed by a dash (i.e. any figures for this resource would start with "template-"). Use .PNG or .JPG for figures.
+
+Figures are included with the following Markdown code:
+
+`![Caption for the picture.](template-figure1.png)`
+
+For more details, see http://rmarkdown.rstudio.com/ and http://rmarkdown.rstudio.com/authoring_basics.html.
+
+## Tables
+
+Tables | Use | Pipes
+-------|-----|------
+To | separate | columns
+
+For more information, see http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#tables
+
+## Equations and more
+
+Markdown allows including equations, but much more as well. For details, see http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html
+
+# Including R script
+
+One of the advantages of the RMarkdown format is that R code can be included. This is explained at http://rmarkdown.rstudio.com/

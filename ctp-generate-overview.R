@@ -2,6 +2,7 @@
 resourcesPath <- "resources";
 
 resources <- lapply(list.files(resourcesPath,
+                               pattern="\\.Rmd",
                                full.names=TRUE),
                     function(filename) {
                       fileContent <- readLines(filename,
@@ -9,3 +10,4 @@ resources <- lapply(list.files(resourcesPath,
                       return(rmarkdown:::parse_yaml_front_matter(fileContent));
                     });
 
+resources

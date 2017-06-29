@@ -1,0 +1,100 @@
+---
+title: "Template for Critical Textbook of Psychology (ctp) resources"
+author: "Gjalt-Jorn Peters"
+date: "2017-06-29"
+params:
+  id: "ctp-template"                 ### A unique identifier for this resource
+  keywords: ["one", "two", "three"]  ### Keywords capturing the resource's subject
+  parent: "none"                     ### Optionally, identifier of encompassing resource
+  weight: 0                          ### Optionally, weight of this resource in its parent
+  requiredreading: ["none"]          ### Identifiers of preceding resources
+  type: "standalone"                 ### One of "standalone" or "supplemental"
+  source: ""                         ### For supplemental resources, a reference to
+                                     ### the source to which this resource is supplemental
+  status: "meta"                     ### One of "meta", "draft" or "final"
+  version: "1.0"                     ### A number indicating the version
+  language: "en"                     ### The language code (following ISO 639-1)
+---
+
+# Some basic explanations
+
+This document tries to provide some basic explanations needed to start writing/contributing. Below, the basics of RMarkdown are explained, but first, some explanation of the YAML metadata you see above.
+
+## YAML metadata
+
+- `title`: The name of the resource (chapter, fragment, section).
+- `author`: The author(s) of the resource
+- `date`: The date this resource is produced
+- `params`: This are the parameters determining how this resource is rendered. It contains the following settings:
+    - `id`: A unique identifier of this resource. This is used to refer to this resource as parent or required reading for other resources. This is also the first part of the filename. Only use lowercase letters and dashes (no capitals, digits, punctuation marks other than dashes, or any other characters).
+    - `keywords`: One or more keywords that indicate the subject matter of this resource. The idea is that we develop a curated list of keywords, and this keyword must be from that list.
+    - `parent`: To enable easy collaboration of different sections that are then rendered together into one resource (e.g. one chapter), it's possible to indicate the 'parent' resource. This resource will then be rendered together with other 'children' into that resource, behind the content of that resource itself.
+    - `weight`: If this resource has a parent, the weight determines its order among its siblings. Resources with higher values 'sink' to the bottom, so `weight` can also be seen as numbers to order the resources within their parents.
+    - `requiredreading`: Because textbooks are often cumulative, a given resource often builds on knowledge from other resources. The identifiers of those resources can be listed here.
+    - `type`: Some resources may be standalone documents, for example chapters. Others may be supplemental materials that are generated to provide additional critical/methodological insights for another existing resource, such as a chapter from another textbook.
+    - `source`: If this resource is a supplementary resource, enter the reference to the original document here.
+    - `status`: The `status` field is used to indicate whether this document concerns metadata about the project (and should not be rendered as a regular resource), whether it's a draft (and should not be rendered in the production version of the textbook), or whether it's the final version that can be included in the textbook.
+    - `version`: Like traditional textbooks, ctp resources may be updated over time. This field can be used to indicate which version this is. The version should also be part of the filename.
+    - `language`: It may be possible that at some point, we want to translate to different languages. This field indicates the language of this file. Note that the language should also be part of the filename.
+
+### Filename conventions
+
+The filename of each ctp resource should consist of the identifier, the version, and the language of the resource, separated by underscores, and followed by the extension capitalised as "Rmd":
+
+`[IDENTIFIER]_[VERSION]_[LANGUAGE].Rmd`
+
+This file, therefore, has the following filename:
+
+``r paste0(params$id, "_", params$version, "_", params$language, ".Rmd");``
+
+## Heading (level 2)
+
+Paragraphs of text are just paragraphs of text.
+
+Use two line breaks to start a new paragraph.
+
+### Heading (level 3)
+
+Headings start with one or more hashes (#). The number of hashes indicates the level of the heading; four hashes signifies a level 4 heading (i.e. a subheading of level 3 headings).
+
+### Emphasis
+
+Text can be *emphasised* using asterisks; text contained in single asterisks is emphasized, while text contained in double asterisks is **strongly emphasized**. The former are usually rendered in italics, while the latter are rendered in bold.
+
+### Lists
+
+- Items can be placed
+- in a bulleted list using
+- dashes.
+
+1. Numbered lists can be
+2. created using numbers.
+
+Note that although the Markdown standard also allows asterisks for making bulleted lists, it's better to avoid those, so that asterisks remain reserved for emphasis. That makes it easy to identify all emphasized terms, which can be useful if we want to automatically generate, for example, an index.
+
+### Figures and links
+
+All included figures must have a Creative Commons license. Start the name of every figure with the filename of the resource (omitting the ".Rmd" extension) followed by an underscore (i.e. any figures for this resource would start with "`r paste0(params$id, "_", params$version, "_", params$language, "_");`"). Use .PNG or .JPG for figures.
+
+Figures are included with the following Markdown code:
+
+`![Caption for the picture.](`r paste0(params$id, "_", params$version, "_", params$language, "_figure1.png");`)`
+
+For more details, see http://rmarkdown.rstudio.com/ and http://rmarkdown.rstudio.com/authoring_basics.html.
+
+### Tables
+
+Tables | Use | Pipes
+-------|-----|------
+To | separate | columns
+And|dashes|for the heading
+
+For more information, see http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#tables
+
+## Equations and more
+
+Markdown allows including equations, but much more as well. For details, see http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html
+
+## Including R script
+
+One of the advantages of the RMarkdown format is that R code can be included. This is explained at http://rmarkdown.rstudio.com/
